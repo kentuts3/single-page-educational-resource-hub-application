@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", monospace;
+}
+
+.home-section {
+    background-image: url('https://wallpapers.com/images/featured/educational-background-uygkkwviq3gbhewf.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(43, 42, 42, 0.5); /* Adds a dark overlay to improve text visibility */
+    padding: 20px; /* Adds some padding around the text */
+    border-radius: 10px; /* Optional: Rounds the corners of the overlay */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); /* Makes buttons white if the background is dark */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(41, 38, 38, 0.5); /* Darker background for better visibility */
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    z-index: 1;
+}
+
+
+.card img{
+    height: 20vh;
+}
+
+.card p{
+    font-size: 0.7rem;
+}
+
+#featured img{
+    height: 20vh;
+    width: 100vw;
+}
+
+#featured button {
+    background: transparent;
+}
+
+#about{
+    height: 70vh;
+}
+
+#about input, textarea{
+    width: 30vw;
+}
